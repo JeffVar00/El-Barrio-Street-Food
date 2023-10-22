@@ -1,14 +1,13 @@
-
-import Featured from "@/components/Featured"
-import Slider from "@/components/Slider"
-import Offer from "@/components/Offer"
+import Featured from "@/components/Featured";
+import Slider from "@/components/Slider";
+import Offer from "@/components/Offer";
 
 export default function Home() {
   return (
     <main>
-      <Slider/>
-      <Featured/>
-      <Offer/>
+      <Slider />
+      <Featured />
+      <Offer />
     </main>
-  )
+  );
 }
