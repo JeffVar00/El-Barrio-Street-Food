@@ -6,17 +6,16 @@ const Featured = () => {
   return (
     <div className="w-screen overflow-x-scroll text-barriosecundary ">
       {/* WRAPPER */}
-
-      <div className="w-max flex">
+      <div className="w-max flex animate-scroll-indicator">
         {/* SINGLE ITEM */}
         {featuredProducts.map((item) => (
           <div
             key={item.id}
-            className="w-screen mt-6 p-6 h-[60vh] flex flex-col items-center justify-around  transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]"
+            className="w-screen p-6 h-[60vh] flex flex-col items-center justify-around  transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh] border-x-2 border-barriosecundary"
           >
             {/* IMAGE CONTAINER */}
             {item.img && (
-              <div className="relative flex-1 w-full">
+              <div className="relative flex-1 w-full mt-4 ">
                 <Image
                   src={item.img}
                   alt="food"

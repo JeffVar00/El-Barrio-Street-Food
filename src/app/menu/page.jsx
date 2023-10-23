@@ -13,12 +13,14 @@ const MenuPage = () => {
           style={{ backgroundImage: `url(${category.img})` }}
         >
           <div className={`text-${category.color} w-1/2`}>
-            <h1 className="uppercase font-bold text-3xl">{category.title}</h1>
+            <h1 className=" font-bold text-3xl">{category.title}</h1>
             <p className="text-sm my-8">{category.desc}</p>
             <button
               className={`hidden 2xl:block bg-${category.color} text-${
-                category.color === "black" ? "white" : "red-500"
-              } py-2 px-4 rounded-md`}
+                category.color === "barrioprimary"
+                  ? "barriosecundary"
+                  : "barrioprimary"
+              } py-2 px-4 rounded-md font-bold`}
             >
               Explorar
             </button>

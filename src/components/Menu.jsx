@@ -21,8 +21,8 @@ const Menu = () => {
         <Image
           src="/open.png"
           alt="menu display"
-          width={20}
-          height={20}
+          width={40}
+          height={40}
           onClick={() => setOpen(true)}
         />
       ) : (

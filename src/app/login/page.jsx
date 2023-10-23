@@ -12,10 +12,12 @@ const LoginPage = () => {
           <Image src="/loginBg.png" alt="" fill className="object-cover" />
         </div>
         {/* FORM CONTAINER */}
-        <div className="p-10 flex flex-col gap-8 md:w-1/2">
-          <h1 className="font-bold text-xl xl:text-3xl">Welcome</h1>
-          <p>Log into your account or create a new one using social buttons</p>
-          <button className="flex gap-4 p-4 ring-1 ring-orange-100 rounded-md">
+        <div className="p-10 flex flex-col gap-8 md:w-1/2 bg-barriosecundary text-barrioprimary">
+          <h1 className="font-bold text-xl xl:text-3xl">
+            Bienvenido a El Barrio - Street Food!
+          </h1>
+          <p>Ingresa o crea tu cuenta utilizando tus redes sociales.</p>
+          <button className="flex gap-4 p-4 ring-1 ring-orange-500 rounded-md bg-white">
             <Image
               src="/google.png"
               alt=""
@@ -23,9 +25,9 @@ const LoginPage = () => {
               height={20}
               className="object-contain"
             />
-            <span>Sign in with Google</span>
+            <span className="text-barriosecundary">Ingresa con Google</span>
           </button>
-          <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md">
+          <button className="flex gap-4 p-4 ring-1 ring-blue-500 rounded-md bg-white">
             <Image
               src="/facebook.png"
               alt=""
@@ -33,13 +35,12 @@ const LoginPage = () => {
               height={20}
               className="object-contain"
             />
-            <span>Sign in with Facebook</span>
+            <span className="text-barriosecundary">Ingresa con Facebook</span>
           </button>
           <p className="text-sm">
-            Have a problem?
+            Tienes problemas para iniciar?{" "}
             <Link className="underline" href="/">
-              {" "}
-              Contact us
+              Contactanos
             </Link>
           </p>
         </div>

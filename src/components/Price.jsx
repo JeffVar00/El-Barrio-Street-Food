@@ -30,10 +30,12 @@ const Price = ({ price, id, options = [] }) => {
         {options?.map((option, index) => (
           <button
             key={option.title}
-            className="min-w-[6rem] p-2 ring-1 ring-red-400 rounded-md"
+            className={`min-w-[6rem] p-2 ring-1 ring-${
+              selected === index ? "barriosecundary" : "barrioprimary"
+            } rounded-md`}
             style={{
-              background: selected === index ? "rgb(248 113 113)" : "white",
-              color: selected === index ? "white" : "red",
+              background: selected === index ? "rgb(231 182 004)" : "white",
+              color: selected === index ? "black" : "black",
             }}
             onClick={() => setSelected(index)}
           >
@@ -44,8 +46,8 @@ const Price = ({ price, id, options = [] }) => {
       {/* QUANTITY AND ADD BUTTON CONTAINER */}
       <div className="flex justify-between items-center">
         {/* QUANTITY */}
-        <div className="flex justify-between w-full p-3 ring-1 ring-red-500">
-          <span>Quantity</span>
+        <div className="flex justify-between w-full p-3 ring-1 ring-barrioprimary ">
+          <span>Cantidad</span>
           <div className="flex gap-4 items-center">
             <button
               onClick={() => setQuantity((prev) => (prev > 1 ? prev - 1 : 1))}
@@ -61,8 +63,8 @@ const Price = ({ price, id, options = [] }) => {
           </div>
         </div>
         {/* CART BUTTON */}
-        <button className="uppercase w-56 bg-barrioprimary bg-barriosecundary p-3 ring-1 ring-red-500">
-          Add to Cart
+        <button className="w-56 text-barrioprimary bg-barriosecundary font-bold p-3 ring-1 ring-barrioprimary">
+          Agregar
         </button>
       </div>
     </div>
