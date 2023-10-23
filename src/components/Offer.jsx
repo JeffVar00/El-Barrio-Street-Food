@@ -16,7 +16,7 @@ const Offer = () => {
         </p>
         <CountDown />
         <button className="bg-barrioprimary text-barriosecundary rounded-md py-3 px-6 font-bold">
-          Ordene ahora!
+          ¡Pruebame!
         </button>
       </div>
       {/* IMAGE CONTAINER */}

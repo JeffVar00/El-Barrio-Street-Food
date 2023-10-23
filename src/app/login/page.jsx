@@ -38,7 +38,7 @@ const LoginPage = () => {
             <span className="text-barriosecundary">Ingresa con Facebook</span>
           </button>
           <p className="text-sm">
-            Tienes problemas para iniciar?{" "}
+            Tienes problemas para iniciar sesión?{" "}
             <Link className="underline" href="/">
               Contactanos
             </Link>

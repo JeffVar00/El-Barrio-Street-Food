@@ -22,6 +22,7 @@ const Navbar = () => {
           ></Image>
           <span>8422-6359</span>
         </div>
+        <Link href="/">Inicio</Link>
         <Link href="/menu">Menú</Link>
         <Link href="/">Contacto</Link>
       </div>
@@ -39,10 +40,10 @@ const Navbar = () => {
       {/* RIGHT LINKS */}
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
         {!user ? (
-          <Link href="/login">Iniciar Sesión</Link>
+          <Link href="/login">Iniciar sesión</Link>
         ) : (
           <div>
-            <Link href="/orders">Mis Ordenes</Link>
+            <Link href="/orders">Mis ordenes</Link>
           </div>
         )}
 

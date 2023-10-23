@@ -39,7 +39,7 @@ const Slider = () => {
           Panza llena, corazón contento
         </h1>
         <button className="bg-barrioprimary text-barriosecundary py-4 px-8 rounded-lg font-bold ">
-          Ordene ahora
+          ¡Ordene ahora!
         </button>
       </div>
       {/* IMAGE CONTAINER */}
