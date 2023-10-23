@@ -3,18 +3,10 @@
 @tailwind utilities;
 
 .neon {
-    color: #FFF;
+    color: #fff; 
     text-shadow:
-        /* -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black, */
-        0 0 5px #FFFF00,
-        0 0 10px #FFFF00,
-        /* 0 0 20px #FFFF00, */
-        /* 0 0 40px #FFFF00, */
-        /* 0 0 80px #FFFF00, */
-        0 0 90px #FFFF00,
-        0 0 100px #FFFF00,
-        0 0 150px #FFFF00;
-}
+        0 0 10px #ffea00,
+        0 0 20px #ffea00,
+        0 0 30px #ffea00,
+        0 0 40px #ffea00;
+    }

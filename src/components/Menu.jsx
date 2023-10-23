@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const links = [
-  { id: 1, name: "Home", path: "/" },
-  { id: 2, name: "Menu", path: "/menu" },
-  { id: 3, name: "Working Hours", path: "/" },
-  { id: 4, name: "Contact Us", path: "/" },
+  { id: 1, name: "Inicio", path: "/" },
+  { id: 2, name: "Menú", path: "/menu" },
+  { id: 3, name: "Horario", path: "/" },
+  { id: 4, name: "Contacto", path: "/" },
 ];
 
 const Menu = () => {
@@ -35,30 +35,57 @@ const Menu = () => {
         />
       )}
 
-       { open && ( <div className="bg-red-500 text-white absolute left-0 top-24 h-[calc(100vh-6rem)] flex flex-col gap-8 w-full items-center justify-center text-3xl z-10">
+      {open && (
+        <div className=" absolute left-0 top-28 h-[calc(100vh-6rem)] flex flex-col gap-8 w-full items-center justify-center text-3xl z-10 text-barrioprimary bg-barriosecundary ">
+          {links.map((link) => (
+            <div key={link.id}>
+              <Link
+                href={link.path}
+                className="hover:border-b-4 border-barrioprimary transition-all duration-100"
+                onClick={() => setOpen(false)}
+              >
+                {link.name}
+              </Link>
+            </div>
+          ))}
 
-        {links.map((link) => (
-          <div key={link.id}>
-            <Link href={link.path} className="" onClick={() => setOpen(false)}>
-              {link.name}
+          {!user ? (
+            <Link
+              className=" hover:border-b-4 border-barrioprimary transition-all duration-100"
+              href="/login"
+              onClick={() => setOpen(false)}
+            >
+              Iniciar Sesión
             </Link>
-          </div>
-        ))}
+          ) : (
+            <div>
+              <Link
+                className=" hover:border-b-4 border-barrioprimary transition-all duration-100"
+                href="/orders"
+                onClick={() => setOpen(false)}
+              >
+                Ordenes
+              </Link>
+              <Link
+                className=" hover:border-b-4 border-barrioprimary transition-all duration-100"
+                href="logout"
+                onClick={() => setOpen(false)}
+              >
+                Logout
+              </Link>
+            </div>
+          )}
 
-        {!user ? (
-          <Link href="/login" onClick={() => setOpen(false)}>Login</Link>
-        ) : (
-          <div>
-            <Link href="/orders" onClick={() => setOpen(false)}>Orders</Link>
-            <Link href="logout" onClick={() => setOpen(false)}>Logout</Link>
-          </div>
-        )}
-
-        <Link href="/cart" onClick={() => setOpen(false)}>Cart</Link>
-
-      </div> )}
-
-    </div> 
+          <Link
+            className=" hover:border-b-4 border-barrioprimary transition-all duration-100"
+            href="/cart"
+            onClick={() => setOpen(false)}
+          >
+            Carrito
+          </Link>
+        </div>
+      )}
+    </div>
   );
 };
 

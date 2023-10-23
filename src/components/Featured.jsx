@@ -4,7 +4,7 @@ import { featuredProducts } from "@/data";
 
 const Featured = () => {
   return (
-    <div className="w-screen overflow-x-scroll text-red-500">
+    <div className="w-screen overflow-x-scroll text-barriosecundary ">
       {/* WRAPPER */}
 
       <div className="w-max flex">
@@ -12,7 +12,7 @@ const Featured = () => {
         {featuredProducts.map((item) => (
           <div
             key={item.id}
-            className="w-screen p-4 h-[60vh] flex flex-col items-center justify-around hover:bg-fuchsia-50 transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]"
+            className="w-screen mt-6 p-6 h-[60vh] flex flex-col items-center justify-around  transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]"
           >
             {/* IMAGE CONTAINER */}
             {item.img && (
@@ -32,9 +32,9 @@ const Featured = () => {
                 {item.title}
               </h1>
               <p className="p-4 2xl:p-8">{item.desc}</p>
-              <span className="text-xl font-bold">${item.price}</span>
-              <button className="bg-red-500 text-white p-2 rounded-md">
-                Add to cart
+              <span className="text-xl font-bold">₡ {item.price}</span>
+              <button className="bg-barriosecundary text-barrioprimary rounded-md py-3 px-6 font-bold">
+                Agregar al carrito
               </button>
             </div>
           </div>

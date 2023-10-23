@@ -61,7 +61,7 @@ const Price = ({ price, id, options = [] }) => {
           </div>
         </div>
         {/* CART BUTTON */}
-        <button className="uppercase w-56 bg-red-500 text-white p-3 ring-1 ring-red-500">
+        <button className="uppercase w-56 bg-barrioprimary bg-barriosecundary p-3 ring-1 ring-red-500">
           Add to Cart
         </button>
       </div>
