@@ -18,7 +18,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-        'scroll-indicator': 'scroll-indicator 3s ease',
+        'scroll-indicator': 'scroll-indicator 6s ease',
       },
       keyframes: {
         'scroll-indicator': {
