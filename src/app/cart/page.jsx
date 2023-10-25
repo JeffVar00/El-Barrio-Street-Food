@@ -8,12 +8,6 @@ const CartPage = () => {
       <div className="h-1/2 p-4 flex flex-col justify-center overflow-scroll lg:h-full lg:w-2/3 2xl:w-1/2 lg:px-20 xl:px-40">
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between mb-4">
-          <Image
-            src="/temporary/daikirif.png"
-            alt=""
-            width={100}
-            height={100}
-          />
           <div className="">
             <h1 className="uppercase text-xl font-bold">Daikiri</h1>
             <span>Pequeño</span>
@@ -23,7 +17,6 @@ const CartPage = () => {
         </div>
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between mb-4">
-          <Image src="/temporary/mojitof.png" alt="" width={100} height={100} />
           <div className="">
             <h1 className="uppercase text-xl font-bold">Mojito</h1>
             <span>Normal</span>
@@ -33,11 +26,9 @@ const CartPage = () => {
         </div>
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between mb-4">
-          <Image src="/temporary/p1.png" alt="" width={100} height={100} />
           <div className="">
-            <h1 className="uppercase text-xl font-bold">
-              Hamburguesa “lléguele”
-            </h1>
+            <h1 className="uppercase text-xl font-bold">Hamburguesa</h1>
+            <h1 className="uppercase text-xl font-bold">“lléguele”</h1>
             <span>Normal</span>
           </div>
           <h2 className="font-bold">₡6500</h2>

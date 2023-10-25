@@ -11,7 +11,8 @@ const Offer = () => {
           Hamburguesa La Mistica
         </h1>
         <p className="text-barrioprimary  xl:text-xl">
-          Son espeluznantemente deliciosas y solo estarán disponibles por el mes de HALLOWEEN!
+          Son espeluznantemente deliciosas y solo estarán disponibles por el mes
+          de HALLOWEEN!
         </p>
         <CountDown />
         <button className="bg-barrioprimary text-barriosecundary rounded-md py-3 px-6 font-bold">
