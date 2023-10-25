@@ -8,32 +8,39 @@ const CartPage = () => {
       <div className="h-1/2 p-4 flex flex-col justify-center overflow-scroll lg:h-full lg:w-2/3 2xl:w-1/2 lg:px-20 xl:px-40">
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between mb-4">
-          <Image src="/temporary/p1.png" alt="" width={100} height={100} />
+          <Image
+            src="/temporary/daikirif.png"
+            alt=""
+            width={100}
+            height={100}
+          />
           <div className="">
-            <h1 className="uppercase text-xl font-bold">sicilian</h1>
-            <span>Larga</span>
+            <h1 className="uppercase text-xl font-bold">Daikiri</h1>
+            <span>Pequeño</span>
           </div>
-          <h2 className="font-bold">₡79.90</h2>
+          <h2 className="font-bold">₡3000</h2>
+          <span className="cursor-pointer">X</span>
+        </div>
+        {/* SINGLE ITEM */}
+        <div className="flex items-center justify-between mb-4">
+          <Image src="/temporary/mojitof.png" alt="" width={100} height={100} />
+          <div className="">
+            <h1 className="uppercase text-xl font-bold">Mojito</h1>
+            <span>Normal</span>
+          </div>
+          <h2 className="font-bold">₡3000</h2>
           <span className="cursor-pointer">X</span>
         </div>
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between mb-4">
           <Image src="/temporary/p1.png" alt="" width={100} height={100} />
           <div className="">
-            <h1 className="uppercase text-xl font-bold">sicilian</h1>
-            <span>Larga</span>
+            <h1 className="uppercase text-xl font-bold">
+              Hamburguesa “lléguele”
+            </h1>
+            <span>Normal</span>
           </div>
-          <h2 className="font-bold">₡79.90</h2>
-          <span className="cursor-pointer">X</span>
-        </div>
-        {/* SINGLE ITEM */}
-        <div className="flex items-center justify-between mb-4">
-          <Image src="/temporary/p1.png" alt="" width={100} height={100} />
-          <div className="">
-            <h1 className="uppercase text-xl font-bold">sicilian</h1>
-            <span>Larga</span>
-          </div>
-          <h2 className="font-bold">₡79.90</h2>
+          <h2 className="font-bold">₡6500</h2>
           <span className="cursor-pointer">X</span>
         </div>
       </div>
@@ -41,7 +48,7 @@ const CartPage = () => {
       <div className="h-1/2 p-4 bg-barriosecundary flex flex-col gap-4 justify-center lg:h-full lg:w-1/3 2xl:w-1/2 lg:px-20 xl:px-40 2xl:text-xl 2xl:gap-6 text-barrioprimary ">
         <div className="flex justify-between">
           <span className="">Subtotal (3 elementos)</span>
-          <span className="">₡81.70</span>
+          <span className="">₡12.500</span>
         </div>
         <div className="flex justify-between">
           <span className="">Costo por servicio</span>
@@ -54,7 +61,7 @@ const CartPage = () => {
         <hr className="my-2" />
         <div className="flex justify-between">
           <span className="">TOTAL (INCL. IVA)</span>
-          <span className="font-bold">₡81.70</span>
+          <span className="font-bold">₡12.500</span>
         </div>
         <button className="bg-barrioprimary p-3 text-barriosecundary rounded-md w-1/2 self-end font-bold">
           Pagar
