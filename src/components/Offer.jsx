@@ -8,11 +8,10 @@ const Offer = () => {
       {/* TEXT CONTAINER */}
       <div className="flex-1 flex flex-col justify-center items-center text-center gap-8 p-6">
         <h1 className="text-barrioprimary text-5xl font-bold xl:text-6xl">
-          Delicious Burger & French Fry
+          Hamburguesa La Mistica
         </h1>
         <p className="text-barrioprimary  xl:text-xl">
-          Progressively simplify effective e-toilers and process-centric methods
-          of empowerment. Quickly pontificate parallel.
+          Son espeluznantemente deliciosas y solo estarán disponibles por el mes de HALLOWEEN!
         </p>
         <CountDown />
         <button className="bg-barrioprimary text-barriosecundary rounded-md py-3 px-6 font-bold">
@@ -21,7 +20,7 @@ const Offer = () => {
       </div>
       {/* IMAGE CONTAINER */}
       <div className="flex-1 w-full relative md:h-full">
-        <Image src="/offerProduct.png" alt="" fill className="object-contain" />
+        <Image src="/burginicio.jpg" alt="" fill className="object-contain" />
       </div>
     </div>
   );
