@@ -44,7 +44,7 @@ export const featuredProducts = [
   {
     id: 3,
     title: "Quesadilla Pulled Pork",
-    desc: "Esta rica quesadilla con carne está esperando a todos esos que somos fanáticos del queso y que nos encanta disfrutar el rico sabor de la carne en una tortilla de harina tamaño XL. También disponible con pollo crispy y pulled pork.",
+    desc: "Ésta rica quesadilla con carne está esperando a todos esos que somos fanáticos del queso y que nos encanta disfrutar el rico sabor de la carne en una tortilla de harina tamaño XL. También disponible con pollo crispy y pulled pork.",
     img: "/temporary/quesadilla.jpg",
     price: 4900,
     options: [
@@ -65,7 +65,7 @@ export const featuredProducts = [
   {
     id: 4,
     title: "6 Alitas bañadas",
-    desc: "Sabrosas alitas de pollo fritas disponibles en órdenes de 6 y 12 unidades. Salsas: Mostaza miel, BBQ, BBQ-Piña, Mango habanero, chipotle y buffalo.",
+    desc: "Sabrosas alitas de pollo frito disponibles en órdenes de 6 y 12 unidades. Salsas: Mostaza miel, BBQ, BBQ-Piña, Mango habanero, chipotle y buffalo.",
     img: "/temporary/alitaspollo.jpg",
     price: 4200,
     options: [
@@ -107,7 +107,7 @@ export const featuredProducts = [
   {
     id: 6,
     title: "Piña Colada",
-    desc: "A timeless favorite with a twist, showcasing a thin crust topped with sweet tomatoes, fresh basil, creamy mozzarella, and a drizzle of extra virgin olive oil, fresh arugula, and a drizzle of balsamic glaze.",
+    desc: "Refrescante y exquisita bebida tropical que evoca los cálidos destinos de playa y la relajación.",
     img: "/temporary/colada.jpg",
     price: 3000,
     options: [
@@ -149,7 +149,7 @@ export const featuredProducts = [
   {
     id: 8,
     title: "Burrotes",
-    desc: "¡Háganse el favor de probar esta delicia! Tortilla de harina, papas fritas, queso mozzarella,mayonesa especial, carne mechada y queso cheddar.",
+    desc: "¡Háganse el favor de probar esta delicia! Tortilla de harina, papas fritas, queso mozzarella, mayonesa especial, carne mechada y queso cheddar.",
     img: "/temporary/burrito.jpg",
     price: 5900,
     options: [
@@ -170,7 +170,7 @@ export const featuredProducts = [
   {
     id: 9,
     title: "Milkshake de fresa",
-    desc: "Una irresistible explosión de sabor y color nuestro Milkshake de fresa",
+    desc: "Una irresistible explosión de sabor en nuestro Milkshake de fresa",
     img: "/temporary/fresa.jpg",
     price: 2700,
     options: [
@@ -425,7 +425,7 @@ export const menu = [
   {
     id: 1,
     slug: "coctels",
-    title: "Cocteles del Barrio",
+    title: "Cócteles del Barrio",
     desc: "¡Llevá la fiesta a tu barrio con nuestros nuevos cócteles!",
     img: "/temporary/coct3.jpg",
     color: "barrioprimary",

@@ -8,7 +8,7 @@ const Offer = () => {
       {/* TEXT CONTAINER */}
       <div className="flex-1 flex flex-col justify-center items-center text-center gap-8 p-6">
         <h1 className="text-barrioprimary text-5xl font-bold xl:text-6xl">
-          Hamburguesa La Mistica
+          Hamburguesa La Mística
         </h1>
         <p className="text-barrioprimary  xl:text-xl">
           Son espeluznantemente deliciosas y solo estarán disponibles por el mes
